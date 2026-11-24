@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+}
+.vlupbtn {
+  width: 3px;
+  height: 45px;
+  background-color: black;
+  border-radius: 20px 0px 0px 20px;
+  position: absolute;
+  top: 140px;
+  left: 515px;
+  cursor: pointer;
+}
+.vldbtn {
+  width: 3px;
+  height: 45px;
+  background-color: black;
+  border-radius: 20px 0px 0px 20px;
+  position: absolute;
+  top: 187px;
+  left: 515px;
+  cursor: pointer;
+}
+.phonebody {
+  width: 331px;
+  height: 651px;
+  background-color: aquamarine;
+  border-radius: 50px;
+  border: 5px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.dynamicisland {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 25px;
+  width: 78px;
+  z-index: 1;
+  top: 15px;
+  border-radius: 60px;
+  box-shadow: rgb(241, 241, 241) 0px 0px 6px;
+  cursor: pointer;
+  transition: 1s linear ease;
+}
+.dynamicisland:hover {
+  height: 27px;
+  width: 80px;
+}
+.lockscreen {
+  background: url(img/download.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 331px;
+  height: 651px;
+  border-radius: 40px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+  font-weight: 350;
+  font-size: 5rem;
+  line-height: 59px;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  /* -webkit-font-smoothing: antialiased; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cellularetc{
+    height: auto;
+    width: 70px;
+    position: absolute;
+    top: 16px;
+    right: 550px;
+    z-index: 1;
+
+}
+.nservice{
+    font-size: 14px;
+    position: absolute;
+    top: 1px;
+    left: 550px;
+    z-index: 1;
+}
+.datendtime {
+  /* background-color: aqua; */
+  height: 190px;
+  width: 320px;
+  position: absolute;
+  top: 95px;
+  color: rgb(148, 148, 148);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.datendtime p {
+  font-size: 27px;
+}
+.datendtime h2 {
+  -webkit-text-stroke: 1px white;
+}
+.camerandlight {
+  width: 320px;
+  height: 90px;
+  /* background-color: aquamarine; */
+  border-radius: 60px;
+  position: absolute;
+  top: 249px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2em;
+  position: relative;
+}
+.camera{
+    background: url(img/Camera.png);
+    background-position: center;
+    background-size:cover ;
+}
+.light{
+    background: url(img/flash.png);
+    background-position: center;
+    background-size:cover ;
+}
+.lockicon {
+  height: 55px;
+  width: 55px;
+  border-radius: 50px;
+  background-color: gray;
+  transition: all 150ms;
+  cursor: pointer;
+}
+.lockicon:hover {
+  height: 57px;
+  width: 57px;
+}
+.line {
+  height: 3px;
+  width: 155px;
+  background-color: gray;
+  border-radius: 90px;
+  position: absolute;
+  top: 615px;
+  cursor: pointer;
+  transition: 0.7s linear;
+}
+.line:hover {
+  width: 157px;
+  background-color: rgb(233, 233, 233);
+}
+
+            /* Home Screen */
+.homescreen{
+  background: url(img/download\ \(3\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 330px;
+  height: 650px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.widget{
+  height: 150px;
+  width: 321px;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wid{
+  height: 132px;
+  width: 142px;
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(255, 255, 255, 0.164) 0px 0px 20px;
+}
+.wid1{
+    background: url(img/images.png);
+    background-position: center;
+    background-size: cover;
+}
+.wid2{
+    background: url(img/CAlendarwidget.png);
+    background-position: center;
+    background-size: cover;
+}
+.applications{
+  height: 310px;
+  width: 321px;
+  position: absolute;
+  /* background-color: blueviolet; */
+  top: 229px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px;
+}
+.app{
+  height: 55px;
+  width: 55px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 20px;
+  box-shadow: white 0px 0px 5px;
+  cursor: pointer;
+}
+.easynav{
+  height: 70px;
+  width: 312px;
+  background-color: rgba(255, 255, 255, 0.103);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  position: absolute;
+  top: 565px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3px;
+  padding: 9px;
+}
+.cutout{
+  display: none;
+}
+.app1{
+    background: url(img/calendar-app.jpg);
+    background-position: center;
+    background-size:cover ;
+}
+.app2{
+    background: url(img/Camera.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app3{
+    background: url(img/clock.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app4{
+    background: url(img/download.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app5{
+    background: url(img/download\ \(1\).png);
+    background-position: center;
+    background-size:cover ;
+}
+.app6{
+    background: url(img/download\ \(2\).png);
+    background-position: center;
+    background-size:cover ;
+}
+.app7{
+    background: url(img/download\ 3.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app8{
+    background: url(img/Home.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app9{
+    background: url(img/Maill.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app10{
+    background: url(img/map.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app11{
+    background: url(img/News.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app12{
+    background: url(img/Note.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app13{
+    background: url(img/photo.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app14{
+    background: url(img/Safari.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app15{
+    background: url(img/flash.png);
+    background-position: center;
+    background-size:cover ;
+}
+.app16{
+    background: url(img/whatsapp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.appnav1{
+    background: url(img/facetie.png);
+    background-position: center;
+    background-size:cover ;
+}
+.appnav2{
+    background: url(img/message.png);
+    background-position: center;
+    background-size:cover ;
+}
+.appnav3{
+    background: url(img/phone.png);
+    background-position: center;
+    background-size:cover ;
+}
+.appnav4{
+    background: url(img/download\ 3.png);
+    background-position: center;
+    background-size:cover ;
+}
+.powebtn{
+    height:80px;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    top: 169px;
+    right:515px;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
